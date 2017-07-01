@@ -1,0 +1,41 @@
+<!-- header section -->
+{{#side-menu width="4%" }}
+  <ul class="nav">
+    <li>
+      <a class="ember-view">
+      {{#side-menu-toggle}}
+        {{#fa-stack size="lg" as |s|}}
+          {{s.stack-2x "circle" inverse="true"}}
+          {{s.stack-1x "chevron-left"}}
+        {{/fa-stack}}
+      {{/side-menu-toggle}}
+    </a>
+    </li>
+    <li>
+      {{#side-menu-link-to "home"}}
+        {{#fa-stack size="lg" as |s|}}
+          {{s.stack-2x "circle" inverse="true"}}
+          {{s.stack-1x "home"}}
+        {{/fa-stack}}
+      {{/side-menu-link-to}}
+    </li>
+    <li>
+      {{#side-menu-link-to "about-me"}}
+        {{#fa-stack size="lg" as |s|}}
+          {{s.stack-2x "circle" inverse="true"}}
+          {{s.stack-1x "user"}}
+        {{/fa-stack}}
+      {{/side-menu-link-to}}
+    </li>
+  </ul>
+{{/side-menu}}
+<header class="navbar navbar-inverse">
+  <div class="navbar-header display-inline">
+      {{#side-menu-toggle class="pull-left p-l-15"}}
+        {{fa-icon "bars" size="3" inverse="true"}}
+      {{/side-menu-toggle}}
+      {{#link-to "home" class="navbar-brand p-l-20"}}
+        Jean-Luc Desroches<small> - Portfolio</small>
+      {{/link-to}}
+  </div>
+</header><!-- //END HEADER -->

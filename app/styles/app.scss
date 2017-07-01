@@ -2,13 +2,4 @@
 @import "ember-side-menu";
 @import "variables";
 @import "navigation";
-
-
-.display-inline {
-  &>* {
-    display: inline;
-    &:not(:first-child) {
-      padding-left: 15px;
-    }
-  }
-}
+@import "helpers";

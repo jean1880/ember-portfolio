@@ -1,7 +1,24 @@
 @import "variables";
 
 .side-menu {
-  a {
+  .nav a {
     color: $navbar-default-link-hover-color;
+
+    &:hover {
+      background-color: $navbar-inverse-link-disabled-color;
+    }
+    &.active {
+      background-color: $navbar-default-link-active-color;
+    }
+  }
+  background-color: $navbar-inverse-bg;
+  color: $navbar-inverse-color;
+}
+
+.navbar {
+  .display-inline {
+    & > * {
+      display: inline;
+    }
   }
 }

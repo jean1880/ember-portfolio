@@ -1,24 +1,42 @@
-@import "variables";
-
 .side-menu {
-  .nav a {
-    color: $navbar-default-link-hover-color;
-
-    &:hover {
-      background-color: $navbar-inverse-link-disabled-color;
+  .nav {
+    li > div {
+      position: relative;
+      display: block;
+      padding: 7px 15px;
+      height: auto;
+      width: auto;
+      &:hover {
+        background-color: $navbar-inverse-link-disabled-color;
+      }
     }
-    &.active {
-      background-color: $navbar-default-link-active-color;
+    a {
+      color: $navbar-default-link-hover-color;
+
+      &:hover {
+        background-color: $navbar-inverse-link-disabled-color;
+      }
+      &.active {
+        background-color: $navbar-default-link-active-color;
+      }
     }
   }
   background-color: $navbar-inverse-bg;
-  color: $navbar-inverse-color;
+  color: $navbar-default-link-hover-color;
 }
 
 .navbar {
   .display-inline {
     & > * {
       display: inline;
+    }
+    .side-menu-toggle {
+      i {
+        padding-top: 3px;
+      }
+      &+a {
+        padding-left: 5px;
+      }
     }
   }
 }

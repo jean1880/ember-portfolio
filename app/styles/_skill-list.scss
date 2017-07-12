@@ -1,0 +1,16 @@
+@import "variables";
+
+.skill-list-component {
+  li {
+    text-decoration: none;
+    list-style: none;
+  }
+  .panel-heading {
+    h3 {
+      margin-top: 10px;
+    }
+  }
+  .panel-body {
+    background-color: $pre-bg
+  }
+}

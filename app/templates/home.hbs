@@ -4,4 +4,10 @@
     {{lorem-ipsum}}
   </div>
 </div>
+<div class="row">
+  <h2 class="col-xs-12">Skills</h2>
+  {{#each skills as |skillSet key|}}
+    {{skill-list skills=skillSet.skills title=skillSet.title}}
+  {{/each}}
+</div>
 {{outlet}}
